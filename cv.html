@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <title>CV Annabelle Grisard</title>
+</head>
+
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-rows: 150px 250px 200px 100px 300px 50px;*/
+        grid-gap: 5px;
+        background-color: #fff;
+        color: #444;
+        padding: 14px;
+    }
+    
+    .box {
+        background-color: #444;
+        color: #fff;
+    }
+    
+    .photo {
+        display: grid;
+    }
+    
+    .header {
+        display: grid;
+        grid-template-columns: 2fr 7fr;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .competence {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .experience {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    
+    .formation {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    
+    .langue {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    .interets {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    
+    .footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    
+    .photo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .infos {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #bloccompetence {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #competence {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .titre {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #design {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #web {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #listdesign {
+        display: flex;
+    }
+    
+    #titreMarge {
+        margin-bottom: 20px;
+    }
+    
+    .titre {
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="box header">
+            <div class="photo">
+                <img id="photo-profil" src="img/photo-profil.jpg" itemprop="image" alt="Photo de profil">
+            </div>
+            <div class="infos">
+                <div itemscope itemtype="http://schema.org/Person">
+                    <h1><span itemprop="name">Annabelle Grisard</span></h1>
+                    <h2><span itemprop="jobTitle">Webdesigner / Intégrateur</span></h2>
+                    <p><span itemprop="description">"L’imagination est plus importante que la connaissance. Car la
+                            connaissance est limitée, alors que l’imagination embrasse l’univers tout entier."</span>
+                    </p>
+                    <a href="mailto:annabelle.grisard@my-digital-school.org" itemprop="email">
+                        contactez-moi</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="box competence">
+            <section id="competence">
+                <div class="titre">
+                    <img class="icones" src="img/icone-competences.png" alt="compétences">
+                    <h2>Mes compétences</h2>
+                </div>
+                <div id="design">
+                    <h3 id="titreMarge">Design</h3>
+                    <div id="listdesign">
+                        <ul class="progress-design">
+                            <li><label>Photoshop:</label></li>
+                            <li><progress class="file" max="100" value="70"> 70% </progress></li>
+                            <li><label>Illustrator:</label></li>
+                            <li><progress class="file" max="100" value="70"> 70% </progress></li>
+                            <li><label>Indesign:</label></li>
+                            <li><progress class="file" max="100" value="60"> 60% </progress></li>
+                        </ul>
+                        <ul class="progress-design">
+                            <li><label>AfterEffects:</label></li>
+                            <li><progress class="file" max="100" value="50"> 50% </progress></li>
+                            <li><label>Première Pro:</label></li>
+                            <li><progress class="file" max="100" value="60"> 60% </progress></li>
+                            <li><label>Adobe XD:</label></li>
+                            <li><progress class="file" max="100" value="50"> 50% </progress></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="web">
+                    <h3>Web</h3>
+                    <div id="file2">
+                        <ul id="progress-web">
+                            <li><label>HTML/CSS3:</label></li>
+                            <li><progress class="file" max="100" value="60"> 60% </progress></li>
+                            <li><label>Php:</label></li>
+                            <li><progress class="file" max="100" value="30"> 30% </progress></li>
+                            <li><label>Base de données:</label></li>
+                            <li><progress class="file" max="100" value="30"> 30% </progress></li>
+                            <li><label>Wordpress:</label></li>
+                            <li><progress class="file" max="100" value="60"> 60% </progress></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="box experience">
+            <section id="experience">
+                <div id="exp">
+                    <div class="titre">
+                        <img class="icones" src="img/icone-experiences.png" alt="compétences">
+                        <h2>Mon expérience</h2>
+                    </div>
+                    <ul>
+                        <li>2018-2019 : Salarié chez La Cave Saint Vincent, caviste à Flers.</li>
+                        <li>2017-2018: Alternance d’un an à Monagraphic en tant que Webdesigner Intégrateur.</li>
+                        <li>2016 : Infocob Solutions, Agence Web, 6 semaines. Création de logo, intégration, mock-up de site, panneaux publicitaires pour l’agence.</li>
+                        <li>2015-2017 : Emploi saisonnier, vendeuse en poissonnerie (2mois) et vendeuse en magasin de vêtement (1mois).
+                        </li>
+                        <li>Depuis 2013 : Babysitting dans différente familles.</li>
+                    </ul>
+                </div>
+
+            </section>
+        </div>
+        <div class="box formation">
+            <section id="formations">
+                <div id="form">
+                    <div class="titre">
+                        <img class="icones" src="img/icone-formations.png" alt="compétences">
+                        <h2>Mes formations</h2>
+                    </div>
+                </div>
+                <ul>
+                    <li>2017-2018 : Titre de WebDesigner RNC Niveau III à l’IMIE Rennes.</li>
+                    <li>2017-2018 : 2 ème année Développeur Logiciel option Web à l’IMIE Rennes en alternance à Monagraphic, Angers.
+                    </li>
+                    <li>2015-2017 : BTS design graphique option Web en 2 ans, LISAA, Nantes.</li>
+                    <li>2014-2015 : Mise à niveau en arts appliqués, LISAA (école de design), à Nantes.</li>
+                    <li>2013-2014 : Baccalauréat scientifique, option science de l’ingénieur, et spécialité informatique et science du numérique, au Lycée saint Thomas d’Aquin, Flers.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="box langue">
+            <div id="langue">
+                <div class="titre">
+                    <img class="icones" src="img/icone-langues.png" alt="compétences">
+                    <h2>Langues</h2>
+                </div>
+                <ul>
+                    <li>Français: langue natale.</li>
+                    <li>Anglais: niveau B2, et TOEIC en 2014 avec 820 points.</li>
+                    <li>Espagnol: les bases de la conversation.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box interets">
+            <div id="interets">
+                <div class="titre">
+                    <img class="icones" src="img/icone-interets.png" alt="compétences">
+                    <h2>Intérets</h2>
+                </div>
+                <p>DESSIN Tennis BATTERIE Voyages guitare-basse MANGAS science-fiction FANTASY JEUX VIDEOS integration JEUX DE ROLES séries tatouage Doctor Who Multimédia web </p>
+                <img src="img/map.jpg" alt="carte des voyages">
+            </div>
+        </div>
+        <div class="box footer">footer</div>
+    </div>
+
+</body>
+
+</html>

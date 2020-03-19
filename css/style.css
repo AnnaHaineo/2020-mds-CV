@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+}
+
+a,
+p,
+span,
+h1,
+h2,
+h3,
+ul,
+li {
+    font-family: 'Arial Narrow';
+}
+
+#photo-profil {
+    width: 50%;
+    border-radius: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+#photo-profil:hover {
+    width: 55%;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2B84A7;
+}
+
+p,
+li {
+    font-size: 1.5 em;
+}
+
+#experience {
+    background-color: rgb(219, 219, 219);
+}
+
+section {
+    padding: 20px;
+}
+
+.icones {
+    width: 80px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+progress {
+    width: 230px;
+    height: 28px;
+    border-radius: 0;
+    border: none;
+    box-shadow: 2px 3px 4px -6px #000;
+}
+
+::-moz-progress-bar {
+    background-color: #2B84A7;
+}
+
+#file2 {
+    transform: rotate(-90deg);
+    width: 230px;
+}
+
+#file2 progress {
+    width: 100%;
+}

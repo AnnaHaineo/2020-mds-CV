@@ -11,140 +11,9 @@
     <title>CV Annabelle Grisard MAJ</title>
 </head>
 
-<style>
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 5px;
-        background-color: #fff;
-        color: #444;
-        padding: 14px;
-    }
-    
-    .box {
-        background-color: #444;
-        color: #fff;
-    }
-    
-    .photo {
-        display: grid;
-    }
-    
-    .header {
-        display: grid;
-        grid-template-columns: 2fr 7fr;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    
-    .competence {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    
-    .experience {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 5;
-    }
-    
-    .formation {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-row-end: 6;
-    }
-    
-    .langue {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    
-    .interets {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end: 6;
-    }
-    
-    .footer {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 7;
-    }
-    
-    .photo {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    
-    .infos {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    
-    #bloccompetence {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    #competence {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    
-    .titre {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    
-    #design {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    
-    #web {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    
-    #listdesign {
-        display: flex;
-    }
-    
-    #titreMarge {
-        margin-bottom: 20px;
-    }
-    
-    .titre {
-        display: flex;
-        align-items: center;
-    }
-</style>
-
-</head>
-
 <body>
     <div class="wrapper">
-        <div class="box header">
+        <div class="boxgrisclair header">
             <div class="photo">
                 <img id="photo-profil" src="img/photo-profil.jpg" itemprop="image" alt="Photo de profil">
             </div>
@@ -161,7 +30,7 @@
             </div>
 
         </div>
-        <div class="box competence">
+        <div class="boxgrisfonce competence paddingdef">
             <section id="competence">
                 <div class="titre">
                     <img class="icones" src="img/icone-competences.png" alt="compétences">
@@ -205,13 +74,14 @@
                 </div>
             </section>
         </div>
-        <div class="box experience">
+        <div class="boxgrisclair experience paddingdef">
             <section id="experience">
                 <div id="exp">
                     <div class="titre">
                         <img class="icones" src="img/icone-experiences.png" alt="compétences">
                         <h2>Mon expérience</h2>
                     </div>
+                </div>
                     <ul>
                         <li>2018-2019 : Salarié chez La Cave Saint Vincent, caviste à Flers.</li>
                         <li>2017-2018: Alternance d’un an à Monagraphic en tant que Webdesigner Intégrateur.</li>
@@ -220,11 +90,10 @@
                         </li>
                         <li>Depuis 2013 : Babysitting dans différente familles.</li>
                     </ul>
-                </div>
 
             </section>
         </div>
-        <div class="box formation">
+        <div class="boxgrisfonce formation paddingdef">
             <section id="formations">
                 <div id="form">
                     <div class="titre">
@@ -242,7 +111,7 @@
                 </ul>
             </section>
         </div>
-        <div class="box langue">
+        <div class="boxgrisfonce langue paddingdef">
             <div id="langue">
                 <div class="titre">
                     <img class="icones" src="img/icone-langues.png" alt="compétences">
@@ -255,7 +124,7 @@
                 </ul>
             </div>
         </div>
-        <div class="box interets">
+        <div class="boxgrisclair interets paddingdef">
             <div id="interets">
                 <div class="titre">
                     <img class="icones" src="img/icone-interets.png" alt="compétences">
@@ -265,7 +134,7 @@
                 <img src="img/map.jpg" alt="carte des voyages">
             </div>
         </div>
-        <div class="box footer">footer</div>
+        <div class="boxnoir footer paddingdef">footer</div>
     </div>
 
 </body>

@@ -207,10 +207,6 @@ progress {
     background-color: #2B84A7;
 }
 
-#file2 {
-    transform: rotate(-90deg);
-    width: 230px;
-}
 
 #file2 progress {
     width: 100%;

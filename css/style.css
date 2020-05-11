@@ -229,6 +229,7 @@ button:hover {
 }
 button a:hover{
     color: black;
+    text-decoration: none;
 }
 .header, .competence, .experience, .formation, .langue, .interets {
     border-radius: 20px;

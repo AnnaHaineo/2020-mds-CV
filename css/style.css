@@ -217,12 +217,17 @@ button {
     border:none;
     border-radius: 12px;
     padding: 10px 18px;
+    
+}
+button a {
     text-decoration: none;
     color: white;
 }
 
 button:hover {
     background-color: grey;
+}
+button a:hover{
     color: black;
 }
 .header, .competence, .experience, .formation, .langue, .interets {

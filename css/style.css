@@ -233,3 +233,7 @@ button a:hover{
 .header, .competence, .experience, .formation, .langue, .interets {
     border-radius: 20px;
 }
+
+.gras {
+    font-weight: 800;
+}

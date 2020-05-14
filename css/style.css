@@ -269,18 +269,28 @@ label {
     padding-right: 10px;
     font-size: 1rem;
 }
-progress::-moz-progress-bar, progress::-webkit-progress-bar {
+progress {
     width: 230px;
     height: 15px;
     border-radius: 10px;
     border: none;
-    box-shadow: 2px 3px 4px -6px #000;
 }
-::-moz-progress-bar, ::-webkit-progress-bar {
+progress::-webkit-progress-bar {
+    width: 230px;
+    height: 15px;
+    border-radius: 10px;
+    border: none;
+}
+::-moz-progress-bar {
     background-color: #D94158;
     border-radius: 10px;
+    border: none;
 }
-
+progress::-webkit-progress-value {  
+	background-color: #D94158;
+    border-radius: 10px;
+    border: none;
+} 
 button {
     background-color:#D94158;
     border:none;

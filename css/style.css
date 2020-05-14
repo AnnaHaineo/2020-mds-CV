@@ -269,7 +269,7 @@ label {
     padding-right: 10px;
     font-size: 1rem;
 }
-progress {
+progress::-moz-progress-bar, progress::-webkit-progress-bar {
     width: 230px;
     height: 15px;
     border-radius: 10px;

@@ -177,7 +177,7 @@ li {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    padding-left: 80px;
+    padding-left: 30px;
 }
 
 .web {
@@ -191,21 +191,27 @@ li {
 .listdesign {
     display: flex;
 }
-
+.listdesign ul{
+    padding: 0px;
+}
+.file2 ul{
+    padding: 0px;
+}
+.progress-design {
+    margin-right: 60px;
+}
 .titreMarge {
-    margin-bottom: 20px;
+    margin: 10px 0px 20px 0px;
     font-size: 1.2rem;
     text-transform: uppercase;
     text-decoration: underline;
 }
-
 .titre {
     display: flex;
     align-items: center;
 }
-
 .experience ul, .formations ul, .langue ul {
-    padding: 10px 20px 0px 37px;
+    padding: 10px 20px 0px 30px;
     margin-bottom: 30px;
 }
 .paddingdef {
@@ -240,7 +246,6 @@ h2{
     font-weight: bold; 
     font-size: 1.5rem; 
 }
-
 p,
 li {
     font-size: 1em;

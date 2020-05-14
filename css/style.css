@@ -10,9 +10,8 @@ h2,
 h3,
 ul,
 li {
-    font-family: 'Arial Narrow';
+    font-family: 'BalsamiqSansRegular';
 }
-
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -21,14 +20,21 @@ li {
     color: #444;
     padding: 14px;
 }
-
+.iconeRS {
+    width: 40px;
+}
+.reseaux {
+    display: flex;
+    flex-direction: row;
+}
 .boxgrisfonce {
     background-color: #444;
     color: #fff;
 }
 .boxgrisclair {
-    background-color: rgb(214, 214, 214);
+    /*background-color: rgb(214, 214, 214);*/
     color: #444;
+    border: 1px solid #444;
 }
 .boxnoir {
     background-color:black;
@@ -41,11 +47,55 @@ li {
 
 .header {
     display: grid;
-    grid-template-columns: 2fr 7fr;
+    grid-template-columns: 2fr 4fr 3fr;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+.mesreseaux h4 {
+    font-size: 1.2rem;
+}
+.mesreseaux {
+    padding-left: 56px;
+    align-self: center;
+}
+.mesreseaux p {
+    padding-left: 20px;
+    align-self: center;
+    margin: 0px;
+}
+.reseaux {
+    margin-bottom: 6px;
+}
+
+.facebook, .instagram, .twitter, .linkedin {
+    width: 32px;
+    height: 32px;
+}
+.facebook {
+    background-image: url("../img/facebook-rouge.png");
+}
+.instagram{
+    background-image: url("../img/instagram-rouge.png");
+}
+.twitter{
+    background-image: url("../img/twitter-rouge.png");
+}
+.linkedin{
+    background-image: url("../img/linkedin-rouge.png");
+}
+.facebook:hover{
+    background-image: url("../img/facebook-bleu.png");
+}
+.instagram:hover{
+    background-image: url("../img/instagram-bleu.png");
+}
+.twitter:hover{
+    background-image: url("../img/twitter-bleu.png");
+}
+.linkedin:hover{
+    background-image: url("../img/linkedin-bleu.png");
 }
 
 .competence {
@@ -124,16 +174,18 @@ li {
 
 .design {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding-left: 80px;
 }
 
 .web {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding-left: 90px;
 }
 
 .listdesign {
@@ -142,6 +194,9 @@ li {
 
 .titreMarge {
     margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .titre {
@@ -150,15 +205,16 @@ li {
 }
 
 .experience ul, .formations ul, .langue ul {
-padding: 0px 20px 0px 20px;
+    padding: 10px 20px 0px 37px;
+    margin-bottom: 30px;
 }
 .paddingdef {
-padding: 20px;
+    padding: 20px;
 }
 .interets p {
-padding-left: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
 }
-
 .photo-profil {
     width: 50%;
     border-radius: 100%;
@@ -174,16 +230,30 @@ h1 {
     font-size: 1.5em;
     font-weight: bold;
     text-transform: uppercase;
-    color: #2B84A7;
+    color: #D94158;
+}
+h2{
+    margin: 0px;
+    margin: 0px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold; 
+    font-size: 1.5rem; 
 }
 
 p,
 li {
-    font-size: 1.5 em;
+    font-size: 1em;
+}
+.experience ul li, .langue ul li, .formation ul li {
+    margin-bottom: 12px;
+}
+.infos h2 {
+    padding: 0px;
 }
 
 .icones {
-    width: 80px;
+    width: 60px;
 }
 
 ul {
@@ -194,26 +264,23 @@ label {
     padding-right: 10px;
     font-size: 1rem;
 }
-
 progress {
     width: 230px;
-    height: 28px;
-    border-radius: 0;
+    height: 15px;
+    border-radius: 10px;
     border: none;
     box-shadow: 2px 3px 4px -6px #000;
 }
-
 ::-moz-progress-bar {
-    background-color: #2B84A7;
+    background-color: #D94158;
+    border-radius: 10px;
 }
-
-
 #file2 progress {
     width: 100%;
 }
 
 button {
-    background-color:#2B84A7;
+    background-color:#D94158;
     border:none;
     border-radius: 12px;
     padding: 10px 18px;
@@ -225,16 +292,19 @@ button a {
 }
 
 button:hover {
-    background-color: grey;
+    background-color: #3085a5;
 }
 button a:hover{
-    color: black;
     text-decoration: none;
 }
 .header, .competence, .experience, .formation, .langue, .interets {
     border-radius: 20px;
 }
 
-.gras {
+.grasblc {
+    font-weight: 800;
+    color: #D94158;
+}
+.grasnoir {
     font-weight: 800;
 }

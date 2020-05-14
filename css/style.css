@@ -295,6 +295,7 @@ button:hover {
     background-color: #3085a5;
 }
 button a:hover{
+    color: white;
     text-decoration: none;
 }
 .header, .competence, .experience, .formation, .langue, .interets {

@@ -276,12 +276,9 @@ progress {
     border: none;
     box-shadow: 2px 3px 4px -6px #000;
 }
-::-moz-progress-bar {
+::-moz-progress-bar, ::-webkit-progress-bar {
     background-color: #D94158;
     border-radius: 10px;
-}
-#file2 progress {
-    width: 100%;
 }
 
 button {
